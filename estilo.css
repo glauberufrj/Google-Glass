@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+	h1 {
+		font-family: Comic Sans MS;
+		font-size: 20px;
+		color: #606060;
+		display: block;
+		background-color: lightgray;
+		padding: 2px;}
+		
+	h1#legenda {
+		background-color: transparent;
+		color: white;
+		text-shadow: 4px 4px 4px black;}
+	
+	h2 {
+		font-family: Arial;
+		color: black;
+		font-size: 15px;}
+		
+		/*Mexo em todos os parágrafos*/
+	p {
+		text-align: justify;
+		text-indent: 10px;}
+	
+		/*Mexo especificamente na imagem do cabeçalho*/
+	header#cabecalho img#icone {
+		position: absolute;
+		left: 900px;
+		top: 50px;
+		width: 250px;}
+		
+		/*Crio um cabeçalho para a pagina*/
+	header#cabecalho {
+		border-bottom: 1px #606060 solid;											/*Cria uma linha*/
+		height: 150px;																/*Define tamanho do cabeçalho*/
+		background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;}		/*Define imagem sem repetição no cabeçalho
+		
+		/*Mexo especificamente no h1 do cabeçalho*/
+	header#cabecalho h1 { 
+		font-family: 'FonteLogo';
+		color: #606060;
+		font-size: 35px;
+		text-shadow: 1px 1px 1px gray;
+		margin-bottom: 0px;}
+		
+		/*Mexo especificamente no h2 do cabeçalho*/
+	header#cabecalho h2{
+		font-family: 'Titillium Web', sans-serif;
+		color: #888888;
+		font-size: 15pt;
+		margin-top: 0px;}
+		
+	body {
+		background-color: #dddddd;
+		background: url("../_imagens/starwars.jpeg");}
+	
+	div#interface {
+		width: 950px;						/*Largura do corpo*/
+		background-color: #F8F8FF;			/*Cor do fundo do corpo*/
+		margin: -20px auto 0px auto;		/*Posiciona na tela*/
+		box-shadow: 2px 2px 15px #2F4F4F;	/*Sombra atrás do background*/
+		padding: 10px 20px 10px 20px;}		/*Expande o body*/ 	
+		
+		/*Definições basicas da imagem como borda e sombra*/
+	figure.foto-legenda {
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;}
+		
+		/*Tamanho da imagem*/
+	figure.foto-legenda img {
+		width: 100%;
+		height: 100%;}
+		
+		/*Mexo nas características da nova legenda*/
+	figure.foto-legenda figcaption {
+		background-color: rgba(0,0,0,.4);
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		transition: opacity 1s;
+		text-align: center;}
+	
+	figure.foto-legenda:hover figcaption {
+		opacity: 1; }
+		
+	nav#menu {
+		display: block;}
+		
+		/*Colocando menu de navegação no topo e setando características*/
+	nav#menu ul {
+		list-style: none;
+		text-transform: uppercase;
+		position: absolute;
+		top: -1.4vw;
+		left: 40vw;}
+		
+		/*Setando características do menu de navegação*/
+	nav#menu li {
+		display: inline-block;
+		background-color: #708090;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 1s;}
+		
+	nav#menu li:hover {
+		background-color: #606060;}
+		
+	nav#menu h1 {
+		display: none;}
+		
+	nav#menu a {
+		color: black;
+		text-decoration: none;
+		transition: color 1s;
+		}
+		
+	nav#menu a:hover {
+		color: white;}
+		
+		/*Crio um corpo para o texto, uma seção à esquerda*/
+	section#corpo {
+		display: block;
+		width: 520px;
+		float: left;
+		border-right: 1px #606060 solid;
+		padding-right: 14px;}
+		
+		/*Mexendo nas características da tabela*/
+	table#tabela {
+		border: 1px #606060 solid;
+		border-spacing: 0px;
+		margin-left: auto;
+		margin-right: auto;}
+		
+		/*Mexendo na parte interna da tabela*/
+	table#tabela td {
+		border: 1px #606060 solid;
+		padding: 10px;
+		}
+		
+		/*Texto ao lado direito, secundário*/
+	aside#lateral {
+		display: block;
+		width: 400px;
+		float: right; }
+		
+	footer#rodape {
+		border-top: 1px #606060 solid;
+		clear: both;}
+		
+	footer#rodape p {
+		text-align: center;}
+		
+	footer#rodape a {
+		display: block;
+		padding-top: 10px;
+		text-decoration: underline overline;}
+		
+	footer#rodape span{
+		text-decoration: underline overline;}
